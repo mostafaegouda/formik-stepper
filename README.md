@@ -34,7 +34,7 @@ Run `npm start` to start the demo in the development mode.
 You can target these buttons in CSS using:
 
 - `.stepper-next-btn` for Next
-- .`stepper-prev-btn` for Prev
+- `.stepper-prev-btn` for Prev
 
 | Properties                                         | Type                                    | Default value | Description                               |
 | -------------------------------------------------- | --------------------------------------- | ------------- | ----------------------------------------- |
