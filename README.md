@@ -1,17 +1,17 @@
 # Headless Formik Stepper Component
 
-Status: `dev`
-
 Headless form stepper components using Formik.
+
+Status: `dev`
 
 ## Installation
 
-Still under development.
+Still under development.\
 Will be available for install soon.
 
 ## Demo
 
-Clone the demo folder and run `npm install`.
+Clone the demo folder and run `npm install`.\
 Run `npm start` to start the demo in the development mode.
 
 ## Components
