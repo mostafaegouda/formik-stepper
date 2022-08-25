@@ -2,16 +2,17 @@
 
 Status: `dev`
 
-Headless form stepper components using Formik
+Headless form stepper components using Formik.
 
 ## Installation
 
-Still under development
-Will be available for install soon
+Still under development.
+Will be available for install soon.
 
 ## Demo
 
-Clone the demo folder and run `npm start` to start the demo in the development mode.
+Clone the demo folder and run `npm install`.
+Run `npm start` to start the demo in the development mode.
 
 ## Components
 
@@ -24,9 +25,9 @@ Clone the demo folder and run `npm start` to start the demo in the development m
 
 ### Step
 
-| Props               | Type                            | Default value | Description                          |
-| ------------------- | ------------------------------- | ------------- | ------------------------------------ |
-| HTML div Attributes | HTMLAttributes<HTMLDivElement>> | ....          | Native HTML attributes for <div> tag |
+| Props               | Type                            | Default value | Description                            |
+| ------------------- | ------------------------------- | ------------- | -------------------------------------- |
+| HTML div attributes | HTMLAttributes<HTMLDivElement>> | ....          | Native HTML attributes for `<div>` tag |
 
 ### StepperButton.(Next | Prev)
 
@@ -35,9 +36,9 @@ You can target these buttons in CSS using:
 - `.stepper-next-btn` for Next
 - .`stepper-prev-btn` for Prev
 
-| Properties                                     | Type                                    | Default value | Description                             |
-| ---------------------------------------------- | --------------------------------------- | ------------- | --------------------------------------- |
-| HTML button Attributes except onClick and type | ButtonHTMLAttributes<HTMLButtonElement> | .....         | Native HTML attributes for <button> tag |
+| Properties                                         | Type                                    | Default value | Description                               |
+| -------------------------------------------------- | --------------------------------------- | ------------- | ----------------------------------------- |
+| HTML button attributes except `onClick` and `type` | ButtonHTMLAttributes<HTMLButtonElement> | .....         | Native HTML attributes for `<button>` tag |
 
 ### StepperProgressItem
 
@@ -47,9 +48,9 @@ You can target these items in CSS using:
 - `[data-status="visited"]` for visited items
 - `[data-status="active"]` for the active item
 
-| Properties          | Type                            | Default value | Description                          |
-| ------------------- | ------------------------------- | ------------- | ------------------------------------ |
-| HTML div attributes | HTMLAttributes<HTMLDivElement>> | ....          | Native HTML attributes for <div> tag |
+| Properties          | Type                            | Default value | Description                            |
+| ------------------- | ------------------------------- | ------------- | -------------------------------------- |
+| HTML div attributes | HTMLAttributes<HTMLDivElement>> | ....          | Native HTML attributes for `<div>` tag |
 
 ## Example
 
