@@ -1,8 +1,10 @@
 import { Field, Form, FormikHelpers, FormikValues } from "formik";
-import Step from "./FromikStepper/Step";
-import Stepper from "./FromikStepper/FormikStepper";
-import StepperButton from "./FromikStepper/StepperButton";
-import StepperProgressItem from "./FromikStepper/StepperProgressItem";
+import {
+  FormikStepper,
+  Step,
+  StepperButton,
+  StepperProgressItem,
+} from "./FormikStepper";
 import * as Yup from "yup";
 
 export type JobApplication = {
@@ -50,7 +52,7 @@ function App() {
   };
   return (
     <div className="App">
-      <Stepper
+      <FormikStepper
         initialValues={inits}
         onSubmit={handleSubmit}
         validationSchemas={validationSchemas}
@@ -90,7 +92,7 @@ function App() {
             </div>
           </div>
         </Form>
-      </Stepper>
+      </FormikStepper>
     </div>
   );
 }
