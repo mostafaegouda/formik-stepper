@@ -10,10 +10,10 @@ import { StepperContext } from "./FormikStepper";
 import { StepperState } from "./types";
 
 type Props = { children?: ReactNode };
-const StepperProgressItem: FC<Props & HTMLAttributes<HTMLDivElement>> = ({
-  children,
-  ...divProps
-}) => {
+
+export const StepperProgressItem: FC<
+  Props & HTMLAttributes<HTMLDivElement>
+> = ({ children, ...divProps }) => {
   const { setProgressItems }: StepperState = useContext(StepperContext)!;
   const itemRef = useRef<HTMLDivElement>(null);
 
@@ -27,4 +27,3 @@ const StepperProgressItem: FC<Props & HTMLAttributes<HTMLDivElement>> = ({
     </div>
   );
 };
-export default StepperProgressItem;

@@ -5,7 +5,7 @@ import useStepPointer from "./useStepPointer";
 
 export const StepperContext = createContext<StepperState | null>(null);
 
-const FormikStepper: FC<FormikStepperProps> = ({
+export const FormikStepper: FC<FormikStepperProps> = ({
   validationSchemas,
   onSubmit,
   ...formikProps
@@ -81,5 +81,3 @@ const FormikStepper: FC<FormikStepperProps> = ({
     </StepperContext.Provider>
   );
 };
-
-export default FormikStepper;

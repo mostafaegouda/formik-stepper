@@ -44,8 +44,7 @@ const Prev: FC<Props & ButtonHTMLAttributes<HTMLButtonElement>> = ({
   } else return null;
 };
 
-const StepperButton = {
+export const StepperButton = {
   Next,
   Prev,
 };
-export default StepperButton;

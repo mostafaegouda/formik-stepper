@@ -10,7 +10,7 @@ import { StepperContext } from "./FormikStepper";
 import { StepperState } from "./types";
 
 type Props = { children: ReactNode };
-const Step: FC<Props & HTMLAttributes<HTMLDivElement>> = ({
+export const Step: FC<Props & HTMLAttributes<HTMLDivElement>> = ({
   children,
   className,
   style,
@@ -34,4 +34,3 @@ const Step: FC<Props & HTMLAttributes<HTMLDivElement>> = ({
     </div>
   );
 };
-export default Step;
