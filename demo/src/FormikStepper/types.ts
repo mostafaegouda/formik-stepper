@@ -31,3 +31,7 @@ export interface CurrentStepAction {
     stepsCount: number;
   };
 }
+
+export type StepPointerHook = (
+  stepsCount: number
+) => [number, () => void, () => void, () => void];

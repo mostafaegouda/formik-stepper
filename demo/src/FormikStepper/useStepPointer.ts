@@ -1,5 +1,9 @@
 import { useReducer } from "react";
-import { CurrentStepAction, CurrentStepActionKind } from "./types";
+import {
+  CurrentStepAction,
+  CurrentStepActionKind,
+  StepPointerHook,
+} from "./types";
 
 // Our reducer function that uses a switch statement to handle our actions
 function stepPointerReducer(state: number, action: CurrentStepAction) {
@@ -16,11 +20,7 @@ function stepPointerReducer(state: number, action: CurrentStepAction) {
   }
 }
 
-type HookReturn = (
-  stepsCount: number
-) => [number, () => void, () => void, () => void];
-
-const useStepPointer: HookReturn = (stepsCount) => {
+const useStepPointer: StepPointerHook = (stepsCount) => {
   const [stepPointer, dispatch] = useReducer(stepPointerReducer, -1);
   const increment = () =>
     dispatch({
