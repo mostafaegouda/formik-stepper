@@ -5,7 +5,6 @@ import {
   StepPointerHook,
 } from "./types";
 
-// Our reducer function that uses a switch statement to handle our actions
 function stepPointerReducer(state: number, action: CurrentStepAction) {
   const { type, payload } = action;
   switch (type) {
