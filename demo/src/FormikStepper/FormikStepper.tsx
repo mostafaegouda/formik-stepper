@@ -25,8 +25,6 @@ export const FormikStepper: FC<FormikStepperProps> = ({
 
   const isLastStep = currentStep === stepsCount - 1;
   const isFirstStep = currentStep === 0;
-  const handleNext = incrementCurrentStep;
-  const handlePrev = decrementCurrentStep;
 
   // empty steps and progress items on unmount to prevent pushing the same ref multiple times
   useEffect(() => {
@@ -39,7 +37,7 @@ export const FormikStepper: FC<FormikStepperProps> = ({
   // everytime the refs lists change reinitialize the current step (not sure if there is a better way)
   useEffect(() => {
     initCurrentStep();
-  }, [steps, progressItems]);
+  }, [steps, progressItems, initCurrentStep]);
 
   // when current step changes, get the new step's schema and check whether we have reached last step or not
   useEffect(() => {
@@ -66,8 +64,8 @@ export const FormikStepper: FC<FormikStepperProps> = ({
         setProgressItems,
         stepsCount,
         currentStep,
-        handleNext,
-        handlePrev,
+        incrementCurrentStep,
+        decrementCurrentStep,
         currentSchema,
         isLastStep,
         isFirstStep,
@@ -75,7 +73,7 @@ export const FormikStepper: FC<FormikStepperProps> = ({
     >
       <Formik
         validationSchema={currentSchema}
-        onSubmit={isLastStep ? onSubmit : handleNext}
+        onSubmit={isLastStep ? onSubmit : incrementCurrentStep}
         {...formikProps}
       />
     </StepperContext.Provider>

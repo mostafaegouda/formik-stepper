@@ -35,7 +35,7 @@ const Prev: FC<Props & ButtonHTMLAttributes<HTMLButtonElement>> = ({
       <button
         className={"stepper-next-btn " + className}
         type="button"
-        onClick={stepperState?.handlePrev}
+        onClick={stepperState?.incrementCurrentStep}
         {...btnProps}
       >
         {children}

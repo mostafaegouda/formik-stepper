@@ -8,8 +8,8 @@ export interface StepperState {
   setProgressItems: Dispatch<SetStateAction<RefObject<HTMLDivElement>[]>>;
   stepsCount: number;
   currentStep: number;
-  handleNext: () => void;
-  handlePrev: () => void;
+  incrementCurrentStep: () => void;
+  decrementCurrentStep: () => void;
   currentSchema: OptionalObjectSchema<any>;
   isLastStep: boolean;
   isFirstStep: boolean;
